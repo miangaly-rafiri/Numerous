@@ -28,13 +28,13 @@ function Game() {
   const handleCreateGame = async () => {
     const response = await createGame();
     setGameId(response.gameId);
-    alert(`Game created! ID: ${response.gameId}`);
+    alert(`Jeu crée ! ID: ${response.gameId}`);
   };
 
   const handleJoinGame = async () => {
     await joinGame(gameId, playerName);
     socket.emit('joinGame', { gameId, playerName });
-    alert('Joined game successfully!');
+    alert('Jeu rejoint avec succès !');
   };
 
   const handleGuess = async () => {
@@ -48,9 +48,9 @@ function Game() {
       <h1>Numerous</h1>
       <button onClick={handleCreateGame}>Crée le jeu</button>
       <input placeholder="Game ID" value={gameId} onChange={(e) => setGameId(e.target.value)} />
-      <input placeholder="Your Name" value={playerName} onChange={(e) => setPlayerName(e.target.value)} />
+      <input placeholder="Votre nom" value={playerName} onChange={(e) => setPlayerName(e.target.value)} />
       <button onClick={handleJoinGame}>Rejoindre le jeu</button>
-      <input placeholder="Your Guess" value={guess} onChange={(e) => setGuess(e.target.value)} />
+      <input placeholder="Votre supposition" value={guess} onChange={(e) => setGuess(e.target.value)} />
       <button onClick={handleGuess}>Supposer</button>
       {feedback && <p>{feedback}</p>}
 

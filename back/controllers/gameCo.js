@@ -62,4 +62,4 @@ function getLeaderboard(req, res) {
   res.status(200).json(leaderboard);
 }
 
-module.exports = { createGame, joinGame, submitGuess, getLeaderboard };
+module.exports = { createGame, joinGame, submitGuess };
