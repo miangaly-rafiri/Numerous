@@ -5,7 +5,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes /> {/* Utilisation de Routes.js pour la navigation */}
+    <Routes /> 
   </React.StrictMode>,
   document.getElementById('root')
 );

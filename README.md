@@ -44,7 +44,7 @@ et à la fin : npm install @testing-library/jest-dom @testing-library/react @tes
 #### b. Installez les dépendances
 ```bash
 npm install socket.io-client
-npm install
+npm install 
 ```
 
 #### c. Démarrez l'application React
