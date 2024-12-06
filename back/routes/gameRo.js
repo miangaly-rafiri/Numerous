@@ -5,5 +5,4 @@ const router = express.Router();
 router.post('/create', createGame);
 router.post('/join', joinGame);
 router.post('/guess', submitGuess);
-
 module.exports = router;

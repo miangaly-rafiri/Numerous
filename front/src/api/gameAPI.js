@@ -30,10 +30,10 @@ export const joinGame = async (gameId, playerName, teamName) => {
 // supposé le chifres 
 export const submitGuess = async (gameId, playerName, guess) => {
   try {
-    const response = await fetch(`${API_URL}/guess`, {
+    const response = await fetch(`${API_URL}${gameId}/guess`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ gameId, playerName, guess }),  
+      body: JSON.stringify({  playerName, guess }),  
     });
 
     if (!response.ok) {

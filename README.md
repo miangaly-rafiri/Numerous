@@ -65,6 +65,6 @@ Le frontend sera accessible à l'adresse : `http://localhost:3000`
 ## TEST API : via Postman
 Vous pouvez tester les requêtes en POST : http://localhost:5001/api/game : /create ou /join ou  /guess (pour supposer les chiffres)  
 
-Parce que sur le front, ça ne s'affiche pas
+Sur le front, le : /guess pour afficher les chiffres , ça ne s'affiche pas mais vous pouvez le tester sur postman ou autre testeur. Mais le reste peut s'afficher sur le front en testant sur 2 pages différentes
 
 Merci pour votre compréhension :) 
