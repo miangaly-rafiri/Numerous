@@ -1,5 +1,4 @@
 # Numerous
-
 ## Installation
 
 ### Prérequis
@@ -56,9 +55,11 @@ npm start
 Le frontend sera accessible à l'adresse : `http://localhost:3000`
 
 
+
 ## Utilisation
 
 1. Ouvrez deux terminaux : un pour le backend et un pour le frontend.
 2. Lancez les deux serveurs comme indiqué ci-dessus.
 3. Accédez à l'application depuis votre navigateur à l'adresse : `http://localhost:3000`
 
+## TEST API : via Postman
