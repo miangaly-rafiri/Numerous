@@ -1,4 +1,3 @@
-// 2e essaie avec les sockets
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
@@ -13,7 +12,7 @@ app.use('/api/game', gameRoutes);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3000', // l' URL du front
+    origin: 'http://localhost:3000', // l' URL pr le front
     methods: ['GET', 'POST'],
   },
 });

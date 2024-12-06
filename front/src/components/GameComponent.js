@@ -46,15 +46,15 @@ function Game() {
   return (
     <div>
       <h1>Numerous</h1>
-      <button onClick={handleCreateGame}>Create Game</button>
+      <button onClick={handleCreateGame}>Crée le jeu</button>
       <input placeholder="Game ID" value={gameId} onChange={(e) => setGameId(e.target.value)} />
       <input placeholder="Your Name" value={playerName} onChange={(e) => setPlayerName(e.target.value)} />
-      <button onClick={handleJoinGame}>Join Game</button>
+      <button onClick={handleJoinGame}>Rejoindre le jeu</button>
       <input placeholder="Your Guess" value={guess} onChange={(e) => setGuess(e.target.value)} />
-      <button onClick={handleGuess}>Submit Guess</button>
+      <button onClick={handleGuess}>Supposer</button>
       {feedback && <p>{feedback}</p>}
 
-      <h3>Players in Game</h3>
+      <h3>Joueur </h3>
       <ul>
         {players.map((player, index) => (
           <li key={index}>{player}</li>
